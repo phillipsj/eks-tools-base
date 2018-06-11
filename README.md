@@ -9,5 +9,6 @@ Pretty easy, pull the image and you have an almost complete working environment 
 
 ```
 docker pull phillipsj/eks-tools-base:0.1-beta
-docker run eks-tools-base
+docker run -it eks-tools-base
 ```
+Now you can run the AWS CLI, Kubectl, and Helm.
