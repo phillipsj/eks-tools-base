@@ -1,4 +1,4 @@
-FROM python:3.6-alpine
+FROM python:3.7-alpine
 
 # Install AWS CLI
 RUN pip install awscli --upgrade
@@ -13,7 +13,7 @@ RUN set -ex \
         && mv ./kubectl /usr/local/bin/kubectl \
         \
         # Install Heptio 
-        && curl -o heptio-authenticator-aws https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-06-05/bin/linux/amd64/heptio-authenticator-aws \
+        && curl -o heptio-authenticator-aws https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/linux/amd64/heptio-authenticator-aws \
         && chmod +x ./heptio-authenticator-aws \
         && mv ./heptio-authenticator-aws /usr/local/bin/heptio-authenticator-aws \
         \
